@@ -1,3 +1,3 @@
-export function count(counterEl: HTMLLIElement){
-    counterEl.innerHTML=`${(+counterEl.innerHTML)+1}`
+export function count(counterEl: HTMLElement){
+    counterEl.innerHTML = `${(+counterEl.innerHTML)+1}`;
 }
