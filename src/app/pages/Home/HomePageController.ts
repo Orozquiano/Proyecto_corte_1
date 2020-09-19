@@ -1,6 +1,6 @@
 const view = require('./HomePage.html');
+const style = require('./HomePageStyle.scss');
 
-import { count } from '../../counter';
 
 export class HomePageController {
 
@@ -8,14 +8,11 @@ export class HomePageController {
     viewId: string = "home-page"
 
     constructor() { 
-        this.startTimer();
+        
     }
     
     getView(): [string, DocumentFragment] {
         return [this.viewId, document.createRange().createContextualFragment(view)];
     }
 
-    startTimer() {
-        window.setInterval(() => { count(document.querySelector(`#${this.viewId} p span`)) }, 1000);
-    }
 }
