@@ -1,0 +1,3 @@
+npm i @types/lodash awesome-typescript-loader @types/source-map@0.5.2 --save-dev
+npm install --save-dev html-webpack-plugin
+npm install file-loader
