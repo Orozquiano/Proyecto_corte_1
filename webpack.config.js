@@ -60,7 +60,22 @@ module.exports = {
               outputPath: 'assets/Audio/', 
               publicPath: 'assets/Audio/',
             }
-          }
+          },
+          { 
+            /**
+             * Se utiliza el cargador de archivos
+             * Toma el nombre del archivo y su extension
+             * Se copia de la carpeta video en el dist
+             * Este Path tomara la ruta del dist y lo colocara en el html
+             */
+            test: /.(mp4|mov|gif)$/i,  
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/Video/', 
+              publicPath: 'assets/Video/',
+            }
+          },
     
         ],
       },
