@@ -1,11 +1,13 @@
-import { count } from './counter'
-import { HomePageController } from './pages/Home/HomePageController'
-import { HabilidadesPageController } from './pages/HabilidadesPage/HabilidadesPageController'
+// import { QuienSoyPageControlls } from './pages/QuienSoy/QuienSoyControlls'
+// import { HabilidadesPageController } from './pages/HabilidadesPage/HabilidadesPageController'
+// import { ClientesPageController} from './pages/Clientes_page/ClientesPageController'
+// import { WorksPageController} from './pages/WorksPage/WorksPageController'
+import{HomePageController} from './pages/HomePage/HomePageController'
 class App {
   
   mainPages = [
-    HomePageController,
-    HabilidadesPageController
+    HomePageController
+    
   ];
   loaded: any =[]; 
 
