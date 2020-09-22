@@ -1,0 +1,359 @@
+$color_Blue1:#153240;
+$color_Blue2:#2E6E8D;
+$color_Blue3:#47AAD9;
+$color_claro1:#FFE6B3;
+$color_claro2:#FFF3D9;
+$color-Oscuro1: #000000;
+
+#Habilidades-page{
+    position: relative;
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    background-color: $color-Blue3;
+        #flecha{
+                position: absolute;
+                transform: rotate(-15deg);
+                z-index: 2;
+                opacity: 0;
+                left: 400px;
+                width: 100px;
+                height: 100px;
+        }
+        #flecha2{
+            position: absolute;
+            z-index: 2;
+            opacity: 0;
+            top: 120px;
+            left: 650px;
+            width: 100px;
+            height: 100px;
+        }
+        #flecha3{
+            position: absolute;
+            transform: rotate(15deg);
+            z-index: 2;
+            opacity: 0;
+            right: 340px;
+            width: 100px;
+            height: 100px;
+        }
+        
+        #text{
+            position: absolute;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            font-size: 40px;
+            border-radius:25%;
+            background-color:$color-Blue1 ;
+            top:-20px;
+            right: 500px;
+            width: 300px;
+            height: 100px;
+            color:$color-claro2;
+            // border: 5px solid $color-claro2;
+
+        }
+        #text2{
+            position: absolute;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            font-size: 20px;
+            border-radius:25%;
+            background-color:$color-Blue1 ;
+            top:450px;
+            opacity: 0;
+            left: 100px;
+            width: 300px;
+            height: 100px;
+            color:$color-claro2;
+            // border: 5px solid $color-claro2;
+
+        }
+        #text2:hover{
+            width: 320px;
+            height: 120px;
+            
+        }
+        #text2:active{
+            width: 320px;
+            height: 120px;
+        }
+        #text3{
+            position: absolute;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            font-size: 20px;
+            border-radius:25%;
+            opacity: 0;
+            background-color:$color-Blue1 ;
+            top:560px;
+            left: 550px;
+            width: 300px;
+            height: 100px;
+            color:$color-claro2;
+            // border: 5px solid $color-claro2;
+
+        }
+        #text3:hover{
+            width: 320px;
+            height: 120px;
+            
+        }
+        #text3:active{
+            width: 320px;
+            height: 120px;
+        }
+        #text4{
+            position: absolute;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            font-size: 20px;
+            border-radius:25%;
+            background-color:$color-Blue1 ;
+            top:400px;
+            opacity: 0;
+            right: 100px;
+            width: 300px;
+            height: 100px;
+            color:$color-claro2;
+            // border: 5px solid $color-claro2;
+
+        }
+        #text4:hover{
+            width: 320px;
+            height: 120px;
+            
+        }
+        #text4:active{
+            width: 320px;
+            height: 120px;
+        }
+        #proyectos1{
+            position: absolute;
+            z-index: 3;
+            top: 150px;
+            left: 80px;
+            width: 400px;
+            opacity:0;
+            height: 250px;
+            border: 5px solid $color-Blue1;
+            border-radius: 25%;
+            cursor: pointer;
+            background-color: $color-Oscuro1;
+            overflow: hidden;
+            video{
+                position: absolute;
+                left:0px;
+                top:0px;
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+        #proyectos1:hover{
+            width: 420px;
+            height: 270px;
+            
+        }
+        #proyectos1:active{
+            width: 420px;
+            height: 270px;
+        }
+        #proyectos2{
+            position: absolute;
+            z-index: 2;
+            left: 20px;
+            top:-20px;
+            opacity:0;
+            width: 300px;
+            height: 300px;
+            border: 5px solid $color_Blue1;
+            border-radius: 25%;
+            cursor: pointer;
+            background-color: $color-Blue1;
+            overflow: hidden;
+            img{
+                position: absolute;
+                left:0px;
+                top:0px;
+                width: 100%;
+                height: 100%;
+            }
+            
+        }
+        #proyectos2:hover{
+            width: 320px;
+            height: 320px;
+            
+        }
+        #proyectos2:active{
+            width: 320px;
+            height: 320px;
+        }
+        #proyectos3{
+            position: absolute;
+            z-index: 2;
+            left:550px;
+            top:230px;
+            opacity:0;
+            width: 300px;
+            height: 300px;
+            border: 5px solid $color_Blue1;
+            border-radius: 25%;
+            cursor: pointer;
+            background-color: $color-Blue1;
+            overflow: hidden;
+            img{
+                position: absolute;
+                left:0px;
+                top:0px;
+                width: 100%;
+                height: 100%;
+            }
+            
+        }
+        #proyectos3:hover{
+            width: 320px;
+            height: 320px;
+            
+        }
+        #proyectos3:active{
+            width: 320px;
+            height: 320px;
+        }
+        #proyectos4{
+            position: absolute;
+            z-index: 3;
+            top: 150px;
+            right: 80px;
+            width: 350px;
+            opacity:0;
+            height: 200px;
+            border: 5px solid $color-Blue1;
+            border-radius: 25%;
+            cursor: pointer;
+            background-color: $color-Oscuro1;
+            overflow: hidden;
+            img{
+                position: absolute;
+                left:0px;
+                top:0px;
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+        #proyectos4:hover{
+            width: 380px;
+            height: 240px;
+            
+        }
+        #proyectos4:active{
+            width: 420px;
+            height: 270px;
+        }
+        #proyectos5{
+            position: absolute;
+            z-index: 2;
+            right:20px;
+            top:-20px;
+            opacity:0;
+            width: 300px;
+            height: 300px;
+            border: 5px solid $color_Blue1;
+            border-radius: 25%;
+            cursor: pointer;
+            background-color: $color-Blue1;
+            overflow: hidden;
+            img{
+                position: absolute;
+                left:0px;
+                top:0px;
+                width: 100%;
+                height: 100%;
+            }
+
+            
+        }
+        #proyectos5:hover{
+            width: 320px;
+            height: 320px;
+            
+        }
+        #proyectos5:active{
+            width: 320px;
+            height: 320px;
+        }
+        #cuadro{
+            opacity: 0;
+        }
+        #abajo{
+            position: absolute;
+            bottom: 0px;
+        }
+        #arriba{
+            position: absolute;
+            width: 100%;
+            top:0px;
+            path{
+                position: absolute;
+                width: 100vw;
+            }
+        }
+
+}
+@keyframes mover{
+    0%{
+        transform: translate(100%);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: rotate(-15deg);
+        opacity: 1;
+    }
+}
+@keyframes mover2{
+    0%{
+        transform: translate(100%);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes mover3{
+    0%{
+        transform: translate(100%);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        
+        opacity: 1;
+    }
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
