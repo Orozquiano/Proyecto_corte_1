@@ -15,6 +15,10 @@ export class HabilidadesPageController {
     }
 
     start(){
+        /**
+        En esta funcion seleccionamos los ids de cada elemento y lo cguardamos en su
+        respectiva variable.
+         */
         let animacion = document.getElementById('flecha');
         let animacion1 = document.getElementById('flecha2');
         let animacion1_1 = document.getElementById('flecha3');
@@ -29,7 +33,9 @@ export class HabilidadesPageController {
         let animaciontext2 = document.getElementById('text3');
         let animaciontext3 = document.getElementById('text4');
         
-
+        /**
+        En esta parte se tomara tres elementos como referencia para medir
+        la altura en la cual estan posicionados en la pantalla  */
         let positionObj1 = animacion.getBoundingClientRect().top;
         let positionObj2 = animacion2.getBoundingClientRect().top;
         let positionObj3 = animacion3.getBoundingClientRect().top;
@@ -38,7 +44,10 @@ export class HabilidadesPageController {
 
             /**
              * se realiza una comparacion entre la posicion del objeto
-             * contra la posicion media de la pantalla
+             * contra la posicion del scroll.
+             * Si la posicion del scroll sobrepasa la del objeto, se incializa
+             * la animacion. 
+             * 
              */
             if((window.scrollY+window.innerHeight/2)>=positionObj1 ){
                 animacion.style.animation = 'mover 2s ease-out';
@@ -49,6 +58,10 @@ export class HabilidadesPageController {
                 animacion1_1.style.opacity = '1';
                 
             }
+            /**
+             * lo mismo sucede en el siguiente caso, pero esta vez con mas elemntos a iniciar
+             * la animacion de aparecer en la pantalla.
+             */
             
             if((window.scrollY+window.innerHeight/2)>=positionObj2 && (window.scrollY+window.innerHeight/2)>=positionObj3 ){
                 animacion2.style.animation = 'aparecer 2s ease-out';
